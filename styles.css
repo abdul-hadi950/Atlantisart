@@ -485,7 +485,7 @@ textarea {
 
   .header nav {
     position: fixed;
-    top: 6rem;
+    top: 8rem;
     right: -120%;
     height: calc(100vh - 6rem);
     width: 100vw;
