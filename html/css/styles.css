@@ -9,7 +9,6 @@
   box-sizing: border-box;
   list-style: none !important;
   text-decoration: none !important;
-  transition: all 0.2s linear;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
@@ -22,13 +21,23 @@ html {
 body {
   overflow-x: hidden;
 }
+.scroller {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: #fff;
   z-index: 100;
   padding: 1rem 5rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -48,8 +57,8 @@ body {
 }
 
 .header nav ul li a {
-  font-size: 2rem;
-  color: #666;
+  font-size: 1.6rem;
+  color: #ffffff;
 }
 
 .header nav ul li a:hover {
@@ -64,9 +73,15 @@ body {
   display: none;
 }
 
+.logo img{
+  width: 5rem;
+}
+.logo {
+  font-size: 2.5rem;
+}
 .home .hero {
   min-height: 100vh;
-  background: url(images/home.jpg) no-repeat;
+  background: url(images/background.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -74,6 +89,7 @@ body {
 }
 
 .home .row {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +97,64 @@ body {
 }
 
 .home .hero .text1 {
+  text-transform: capitalize;
+  background-color: #333333bb;
+  font-size: 8rem;
+  width: 60rem;
+  padding: 1rem;
+  opacity: 1;
+  color: #fff;
+  text-shadow:0px 6px 0px #0c0c0c;
+  border-radius: 0 30px 30px 0px;
+}
+
+.home .hero .text2 {
+  background-color: #333333bb;
+  text-align: left;
+  font-size: 4rem;
+  width: 50rem;
+  padding: 1rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  text-shadow:0px 5px 0px #000000
+}
+
+.home .hero .text3 {
+  background-color: #333333bb;
+  text-align: left;
+  font-size: 3rem;
+  width: 35rem;
+  padding: 1rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  text-shadow:0px 5px 0px #000000
+}
+
+.hotels a{
+  color: #000000;
+
+}
+.hotels .hero {
+  min-height: 100vh;
+  background: url(images/Hotel-Sector-Main-Image-New.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hotels .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.hotels .hero .text1 {
   text-transform: capitalize;
   margin: auto;
   font-size: 10rem;
@@ -91,7 +165,7 @@ body {
   text-shadow:0px 5px 0px #ffffff
 }
 
-.home .hero .text2 {
+.hotels .hero .text2 {
   margin: auto;
   font-size: 5rem;
   width: 70rem;
@@ -103,6 +177,159 @@ body {
   border-radius: 0 1rem 1rem 0;
   text-shadow:0px 5px 0px #000000
 }
+
+
+
+
+.Resturants a{
+  color: #000000;
+
+}
+.Resturants .hero {
+  min-height: 100vh;
+  background: url(images/restaurants-homepage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.Resturants .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.Resturants .hero .text1 {
+  text-transform: capitalize;
+  margin: auto;
+  font-size: 10rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  text-shadow:0px 5px 0px #ffffff
+}
+
+.Resturants .hero .text2 {
+  margin: auto;
+  font-size: 5rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  text-shadow:0px 5px 0px #000000
+}
+
+.Bedroom a{
+  color: #000000;
+
+}
+.Bedroom .hero {
+  min-height: 100vh;
+  background: url(images/residential.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.Bedroom .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.Bedroom .hero .text1 {
+  text-transform: capitalize;
+  margin: auto;
+  font-size: 10rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  text-shadow:0px 5px 0px #ffffff
+}
+
+.Bedroom .hero .text2 {
+  margin: auto;
+  font-size: 5rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  text-shadow:0px 5px 0px #000000
+}
+
+
+.residential a{
+  color: #000000;
+
+}
+.residential .hero {
+  min-height: 100vh;
+  background: url(images/retail-homepage.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.residential .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.residential .hero .text1 {
+  text-transform: capitalize;
+  margin: auto;
+  font-size: 10rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 1;
+  text-shadow:0px 5px 0px #ffffff
+}
+
+.residential .hero .text2 {
+  margin: auto;
+  font-size: 5rem;
+  width: 70rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+  border-radius: 0 1rem 1rem 0;
+  text-shadow:0px 5px 0px #000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .home .counting {
   min-height: 40vh;
@@ -125,67 +352,9 @@ body {
 
 .home .counting .box h3 {
   font-size: 2rem;
-  color: #4070f4;
+  color: #37383d;
 }
 
-.about {
-  min-height: 100vh;
-  padding-bottom: 3rem;
-}
-
-.heading {
-  font-size: 4rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
-  color: #444;
-  margin: 2rem 0;
-  padding-top: 3rem;
-  text-decoration: underline !important;
-}
-
-.about .image {
-  padding: 2rem;
-}
-
-.about .image img {
-  height: 45rem;
-  object-fit: cover;
-  box-shadow: 2.5rem 2.5rem 0 1rem #4070f4;
-  border-radius: 1rem;
-}
-
-.about .info {
-  padding: 2rem;
-  margin-top: 3rem;
-}
-
-.about .info h2 {
-  color: #4070f4;
-  font-size: 3rem;
-}
-
-.about .info p {
-  font-size: 1.4rem;
-  color: #444;
-  margin: 2rem 0;
-}
-
-.about .info .icons a {
-  font-size: 2rem;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  border-radius: 0.5rem;
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-.about .info .icons a:hover {
-  background: #4070f4;
-}
 
 .service {
   min-height: 100vh;
@@ -285,6 +454,7 @@ body {
 }
 
 .contact {
+  margin-top: 7rem;
   min-height: 100vh;
 }
 
@@ -459,12 +629,11 @@ textarea {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f9f9f9;
+  background: #5c5c5c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4070f4;
-  border-radius: 1rem;
+  background: #464646;
 }
 
 .fa-times {
@@ -484,19 +653,20 @@ textarea {
 
   .header nav {
     position: fixed;
-    top: 8rem;
+    top: 6.1rem;
     right: -120%;
     height: calc(100vh - 6rem);
     width: 100vw;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
   }
 
   .header nav ul {
     height: 100%;
     width: 33rem;
-    background: #fff;
+    background: #636363;
     flex-flow: column;
     justify-content: center;
     float: right;
@@ -544,6 +714,9 @@ textarea {
 }
 
 @media (max-width: 400px) {
+  .scroller{
+    width: 100%;
+  }
   .home .hero .text1 {
     font-size: 5rem;
     width: 33rem;
@@ -558,4 +731,47 @@ textarea {
   .project{
     min-height: 155vh;
   }
+
+  .Resturants .hero .text1 {
+    font-size: 5rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .Resturants .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+
+  .Bedroom .hero .text1 {
+    font-size: 5rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .Bedroom .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+  .hotels .hero .text1 {
+    font-size: 5rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .hotels .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+  .residential .hero .text1 {
+    font-size: 5rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .residential .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+
 }

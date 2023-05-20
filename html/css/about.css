@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none !important;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s linear;
+}
+  
+  
+  
+  body{
+    overflow-y: scroll;
+    
+  }
+  
+  header{
+    background: #333;
+  }
+
+  .header nav ul li a {
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+  .header nav ul li a:hover {
+    font-size: 1.6rem;
+    color: #b3b3b3;
+  }
+
+  .about{
+    min-height: 100%;
+  }
+  
+  .about .image {
+    margin-top: 10rem;
+    padding: 2rem;
+  }
+  
+  .about .image img {
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem #333;
+    border-radius: 1rem;
+  }
+  
+  .about .info {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .about .info h2 {
+    color: #333;
+    font-size: 3rem;
+  }
+  
+  .about .info p {
+    font-size: 1.4rem;
+    color: #444;
+    margin: 2rem 0;
+  }
+  
+  .about .info .icons a {
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .about .info .icons a:hover {
+    background: #585858;
+  }

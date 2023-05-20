@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>AtlantisArt</title>
+
     <!--favicon-->
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="css/images/favicon/favicon.ico">
 
     <!--font awesome-->
     <link
@@ -28,21 +28,20 @@
     />
 
     <!--css file-->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css">
   </head>
   <body>
     <!-- header section starts  -->
     <header class="header fixed-top">
-      <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+      <a href="#" class="logo"><img src="css/images/atlantis-art-logo.png" alt=""></a>
 
       <nav>
         <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#service">Services</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="project.html">projects</a></li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
 
@@ -51,49 +50,47 @@
     <!-- header section ends -->
 
     <!-- home section starts  -->
-    <section id="projects" class="projects">
+    <section id="contact" class="contact">
 
-      <div class="box-container mx-auto" >
-        <div class="blog">
-            <img src="images/img1.jpg" alt="" />
+      <div class="contact-box-container mx-auto">
+        <div class="contact-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Kannur, Kerala, India - 670005</h3>
         </div>
 
-        <div class="blog">
-            <img src="images/img2.jpg" alt="" />
+        <div class="contact-box">
+          <i class="fas fa-envelope"></i>
+          <h3>aabbccdd@gmail.com</h3>
         </div>
 
-        <div class="blog">
-            <img src="images/img3.jpg" alt="" />
+        <div class="contact-box">
+          <i class="fas fa-phone"></i>
+          <h3>+918304040404</h3>
         </div>
+      </div>
 
-        <div class="blog">
-            <img src="images/img4.jpg" alt="" />
-        </div>
-
-        <div class="blog">
-          <img src="images/img1.jpg" alt="" />
-        </div>
-
-        <div class="blog">
-            <img src="images/img2.jpg" alt="" />
-        </div>
-
-        <div class="blog">
-            <img src="images/img3.jpg" alt="" />
-        </div>
-
-        <div class="blog">
-            <img src="images/img4.jpg" alt="" />
-        </div>
-
+      <div class="form-container mx-auto">
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="full name" />
+            <input type="text" placeholder="phone number" />
+          </div>
+          <input type="email" placeholder="email address" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="message"
+          ></textarea>
+          <input type="submit" value="send" />
+        </form>
+      </div>
     </section>
-    <!-- home section ends -->
-
-
     <!-- contact section ends -->
 
     <!-- footer section starts  -->
-    <section class="container-fluid footer" style="position: relative; top: 100%;">
+    <section class="container-fluid footer">
       <div class="row">
         <div class="col-md-3">
           <h2>AtlantisArt</h2>
@@ -138,6 +135,7 @@
       </h1>
     </section>
     <!-- footer section ends -->
+    
 
     <!--jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -146,6 +144,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <!--js file-->
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

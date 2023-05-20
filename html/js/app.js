@@ -30,11 +30,11 @@ $(document).ready(function () {
     );
   });
 
-  $(".box").magnificPopup({
-    delegate: "a",
-    type: "image",
-    gallery: {
-      navigateByImgClick: true,
-    },
-  });
+  
 });
+
+
+
+
+
+
