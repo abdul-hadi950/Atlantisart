@@ -106,6 +106,7 @@ body {
   color: #fff;
   text-shadow:0px 6px 0px #0c0c0c;
   border-radius: 0 30px 30px 0px;
+  opacity: 0.8;
 }
 
 .home .hero .text2 {
@@ -705,7 +706,6 @@ textarea {
     align-items: center;
     font-size: 6rem;
     width: 42rem;
-    height: 10rem;
     text-shadow:0px 4px 0px #000000;
     border-radius:0 20px 20px 0;
   }
