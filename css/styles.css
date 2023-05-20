@@ -547,12 +547,15 @@ textarea {
 .footer {
   background: #333;
   text-align: center;
+  
 }
 
 .footer .row {
   width: 100%;
   margin-left: 0;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer .row .col-md-3 {
@@ -570,15 +573,19 @@ textarea {
 }
 
 .footer .list {
+  margin-top: 2rem;
+  justify-content: space-evenly;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 .footer .list a {
   color: #ccc;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
-
+.footer .list a:hover{
+  color: #fff;
+}
 .footer .letter p {
   font-size: 2rem;
 }
