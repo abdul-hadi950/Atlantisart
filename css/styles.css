@@ -702,11 +702,60 @@ textarea {
 }
 @media (max-width: 450px) {
   .home .hero .text1 {
-    font-size: 5rem;
+    align-items: center;
+    font-size: 6rem;
+    width: 42rem;
+    height: 10rem;
+    text-shadow:0px 4px 0px #000000;
+    border-radius:0 20px 20px 0;
+  }
+  .home .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    border-radius:0 20px 20px 0;
+    text-shadow:0px 3px 0px #000000
+  }
+  .home .hero .text3 {
+    border-radius:0 20px 20px 0;
+    text-shadow:0px 3px 0px #000000
+  }
+  .Resturants .hero .text1 {
+    font-size: 6rem;
     width: 33rem;
     text-shadow:0px 4px 0px #ffffff
   }
-  .home .hero .text2 {
+  .Resturants .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+
+  .Bedroom .hero .text1 {
+    font-size: 6rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .Bedroom .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+  .hotels .hero .text1 {
+    font-size: 6rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .hotels .hero .text2 {
+    font-size: 4rem;
+    width: 35rem;
+    text-shadow:0px 3.5px 0px #000000
+  }
+  .residential .hero .text1 {
+    font-size: 6rem;
+    width: 33rem;
+    text-shadow:0px 4px 0px #ffffff
+  }
+  .residential .hero .text2 {
     font-size: 4rem;
     width: 35rem;
     text-shadow:0px 3.5px 0px #000000
@@ -719,17 +768,13 @@ textarea {
   }
   .home .hero .text1 {
     font-size: 5rem;
-    width: 33rem;
-    text-shadow:0px 4px 0px #ffffff
+    width: 40rem;
+    text-shadow:0px 4px 0px #000000
   }
   .home .hero .text2 {
     font-size: 4rem;
     width: 35rem;
     text-shadow:0px 3.5px 0px #000000
-  }
-
-  .project{
-    min-height: 155vh;
   }
 
   .Resturants .hero .text1 {
